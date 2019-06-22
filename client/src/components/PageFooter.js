@@ -3,7 +3,7 @@ import React,{Component} from 'react';
 const footerStyle={
     bottom:"0",
     position:"absolute",
-    height:"5.5rem",
+    height:"5.6rem",
     textAlign:"center",
     width:"100%",
     background:"#e3f2fd", 

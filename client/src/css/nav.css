@@ -12,6 +12,9 @@ nav {
     color: #e3f2fd !important;
 }
 
+.fa-times:hover {
+    color: #243d66;
+}
 .nav-item,.navbar-brand {
     height: 57.98px;
     line-height: 57.98px;

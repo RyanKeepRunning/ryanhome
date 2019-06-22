@@ -1,8 +1,7 @@
 .small_button {
   outline: none;
-  border: 0px solid rgba(86, 88, 88, 1);
-  /* background: orangered; */
-  color: white;
+  border: 1px solid  #608dd6;
+  background: orangered;
   border-radius: 20px;
   width: auto;
   height: auto;
@@ -19,10 +18,12 @@
   -ms-transition: background-color 200ms linear;
   transition: background-color 200ms linear;
   cursor: pointer !important;
+  color:#608dd6;
 }
 
 .small_button:hover {
-  background-color: #0052cc  !important;
+  color:#e3f2fd;
+  background-color: #608dd6  !important;
 }
 
 .small_button:active,

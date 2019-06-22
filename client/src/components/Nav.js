@@ -3,6 +3,10 @@ import {Link} from 'react-router-dom';
 import AlertWindow from "../components/AlertWindow";
 import '../css/nav.css';
 
+const collapse = () => {
+    document.getElementById('toggleButton').click();
+}
+
 class NavBar extends Component {
     constructor(props){
         super(props);
@@ -13,25 +17,34 @@ class NavBar extends Component {
             emptySearch:false
         }
     }
+
     handleClickHomePage=()=>{
         this.setState({
             activeTag:""
+        },()=>{
+            if(this.refs.nav.clientHeight>57.98){
+                collapse();
+            }
         });
     }
     handleClickAbout=()=>{
         this.setState({
             activeTag:"About"
+        },()=>{
+            collapse();
         });
     }
     handleClickComments=()=>{
         this.setState({
             activeTag:"Comments"
+        },()=>{
+            collapse();  
         });
     }
     handleInputSearchText=(e)=>{
         this.setState({
             searchText:e.target.value
-        })
+        });
     }
 
     toggleExpand=()=>{
@@ -42,7 +55,9 @@ class NavBar extends Component {
         }, 300);
     }
     handleEmptyInput=()=>{
-        this.setState({emptySearch:true});
+        this.setState({emptySearch:true},()=>{
+            collapse();  
+        });
     }
     
     handleSearch=()=>{
@@ -62,15 +77,14 @@ class NavBar extends Component {
             case "Comments": comments="nav-item active";break;
             default: 
         }
-        console.log(about);
-        console.log(comments);
+
         return(
             <React.Fragment>
                 <nav className="fixed-top navbar navbar-expand-md navbar-light" style={{backgroundColor:'#e3f2fd'}}  ref="nav">
                     <Link to='/' className="navbar-brand" role="button" onClick={this.handleClickHomePage}>
                         <span className='brandTag'><i className="far fa-smile-wink"></i>RyanHome</span>
                     </Link>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" 
+                    <button id="toggleButton" className="navbar-toggler" type="button" data-toggle="collapse" 
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
                     aria-expanded="false" aria-label="Toggle navigation"
                     onClick={this.toggleExpand}>

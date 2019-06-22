@@ -73,7 +73,7 @@ class AlertWindow extends Component {
                         <SmallEllipseBtn
                           text={this.props.btnText}
                           style={{
-                            backgroundColor: "rgba(104, 99, 105, 1)",
+                            backgroundColor: "#e3f2fd",
                             width: "100%"
                           }}
                         />
@@ -90,7 +90,7 @@ class AlertWindow extends Component {
                         <SmallEllipseBtn
                           text={this.props.btnText}
                           style={{
-                            backgroundColor: "rgba(104, 99, 105, 1)",
+                            backgroundColor: "#e3f2fd",
                             width: "100%"
                           }}
                         />
@@ -122,7 +122,7 @@ class AlertWindow extends Component {
                         <SmallEllipseBtn
                           text={this.props.btnOneText}
                           style={{
-                            backgroundColor: "rgba(104, 99, 105, 1)",
+                            backgroundColor: "#e3f2fd",
                             width: "100%"
                           }}
                         />
@@ -161,7 +161,7 @@ class AlertWindow extends Component {
                         <SmallEllipseBtn
                           text={this.props.btnTwoText}
                           style={{
-                            backgroundColor: "rgba(104, 99, 105, 1)",
+                            backgroundColor: "#e3f2fd",
                             width: "100%"
                           }}
                         />
@@ -210,7 +210,7 @@ class AlertWindow extends Component {
                         <SmallEllipseBtn
                           text={this.props.btnOneText}
                           style={{
-                            backgroundColor: "rgba(104, 99, 105, 1)",
+                            backgroundColor: "#e3f2fd",
                             width: "100%",
                             textAlign: "center"
                           }}
@@ -297,7 +297,7 @@ class AlertWindow extends Component {
                         <SmallEllipseBtn
                           text={this.props.btnThreeText}
                           style={{
-                            backgroundColor: "rgba(104, 99, 105, 1)",
+                            backgroundColor: "#e3f2fd",
                             width: "100%",
                             textAlign: "center"
                           }}
