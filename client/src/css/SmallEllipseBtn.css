@@ -1,0 +1,32 @@
+.small_button {
+  outline: none;
+  border: 0px solid rgba(86, 88, 88, 1);
+  /* background: orangered; */
+  color: white;
+  border-radius: 20px;
+  width: auto;
+  height: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  clear: both;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  -webkit-transition: background-color 200ms linear;
+  -ms-transition: background-color 200ms linear;
+  transition: background-color 200ms linear;
+  cursor: pointer !important;
+}
+
+.small_button:hover {
+  background-color: #0052cc  !important;
+}
+
+.small_button:active,
+.small_button:focus {
+  -moz-outline-style: none;
+  outline: none;
+}
