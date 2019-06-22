@@ -16,18 +16,15 @@ class RootRouter extends Component{
     }
     navToggleExpand=(navHeight)=>{
         if(parseInt(navHeight)>57.98){
-            console.log('1');
             this.setState({
                 navHeight:`${navHeight}px`
             });
         }
         else if(parseInt(navHeight)===57.98){
-            console.log('2');
             this.setState({
                 navHeight:`${navHeight}px`
             });
         }else{
-            console.log('3');
             this.setState({
                 navHeight:`57.98px`
             });
