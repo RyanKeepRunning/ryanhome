@@ -3,14 +3,12 @@ import React,{Component} from 'react';
 const footerStyle={
     bottom:"0",
     position:"absolute",
-    height:"5.6rem",
+    height:"7.3 rem",
     textAlign:"center",
     width:"100%",
     background:"#e3f2fd", 
     paddingTop:"5px",
     paddingBottom:"5px",
-    borderTop:'1px solid #608dd6',
-    borderBottom:'1px solid #608dd6',
 }
 const textStyle={
     marginTop:'1px',

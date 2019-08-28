@@ -2,10 +2,11 @@ nav {
     border-bottom: 1px solid #608dd6;
     border-top: 1px solid #608dd6;
 }
-
+.searchBar {
+    margin-top: 8px !important;
+}
 .nav-link:hover{
     background-color: #608dd6;
-    transition: 0.3s;
 }
 
 .nav-link:hover span {
@@ -17,17 +18,23 @@ nav {
 }
 .nav-item,.navbar-brand {
     height: 57.98px;
-    line-height: 57.98px;
+    line-height:57.98px;
     padding: 0;
     text-align: center;
 }
 .navbar, .navbar-collapse {
     padding: 0 1rem;
 }
+.fixed-top{
+    position:fixed;
+}
 .nav-link {
-    padding-top:0;
-    padding-bottom:0;
+    padding-top:0 !important;
+    padding-bottom:0 !important;
     margin-right:10px;
+    height: 57.98px !important;
+    line-height: 57.98px !important;
+    text-align: center;
 }
 .active > .nav-link{
     background-color: #608dd6;
@@ -65,10 +72,8 @@ nav span {
 
 .brandTag {
     font-size:20px;
-    /* font-family:Arial, Helvetica, sans-serif;  */
     font-weight:700;
 }
 .sectionTag {
     font-size:17px;
-    /* font-family:Arial, Helvetica, sans-serif; */
 }

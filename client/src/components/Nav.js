@@ -3,8 +3,10 @@ import {Link} from 'react-router-dom';
 import AlertWindow from "../components/AlertWindow";
 import '../css/nav.css';
 
-const collapse = () => {
-    document.getElementById('toggleButton').click();
+const collapse = (height) => {
+    if(height>100){
+        document.getElementById('toggleButton').click();
+    }
 }
 
 class NavBar extends Component {
@@ -22,23 +24,21 @@ class NavBar extends Component {
         this.setState({
             activeTag:""
         },()=>{
-            if(this.refs.nav.clientHeight>57.98){
-                collapse();
-            }
+            collapse(this.refs.nav.clientHeight);
         });
     }
     handleClickAbout=()=>{
         this.setState({
             activeTag:"About"
         },()=>{
-            collapse();
+            collapse(this.refs.nav.clientHeight);
         });
     }
     handleClickComments=()=>{
         this.setState({
             activeTag:"Comments"
         },()=>{
-            collapse();  
+            collapse(this.refs.nav.clientHeight);  
         });
     }
     handleInputSearchText=(e)=>{
@@ -102,7 +102,7 @@ class NavBar extends Component {
                                 <span className='sectionTag'>AboutMe</span></Link>
                             </li>
                         </ul>
-                        <form className="form-inline my-2 my-lg-0">
+                        <form className="form-inline my-2 my-lg-0 searchBar">
                             <input className="form-control mr-sm-2" 
                             style={{height:'42px',width:'280px',fontSize:'17px'}}
                             type="search" 
@@ -116,7 +116,6 @@ class NavBar extends Component {
                             <Link to={`/search/${this.state.searchText}`}>
                                 <button className="btn searchSubmit my-2 my-sm-0" onClick={this.handleSearch}><span style={{fontSize:'17px'}}><i className="fas fa-search"></i></span></button>
                             </Link>:<button className="btn searchSubmit my-2 my-sm-0" onClick={this.handleEmptyInput} type="button"><span style={{fontSize:'17px'}}><i className="fas fa-search"></i></span></button>}
-                            
                         </form>
                         
                     </div>

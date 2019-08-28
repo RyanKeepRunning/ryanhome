@@ -1,0 +1,49 @@
+.aboutTitle {
+    color:#608dd6;
+    text-align: center;
+    font-size: 27px;
+}
+.aboutFrame {
+    margin-top:100px;
+    margin-bottom: 100px;
+    padding:10px;
+    border: 2px outset #e3f2fd;
+}
+.profilePic {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 0px;
+    transition: 0.3s;
+}
+.profilePic:hover{
+    cursor: pointer;
+}
+.linkedin {
+    transition:0.3s;
+}
+.linkedinLink {
+    color:blue !important; 
+    font-size: 18px;   
+}
+.linkedinContainer:hover {
+    transform:scale(1.2,1.2);
+    transition:0.3s;
+}
+.linkedin:hover {
+    cursor: pointer;
+}
+.funfacts>li{
+    margin-top: 21px;
+}
+.aboutHrContainer{
+    text-align: center;
+    margin-top: 30px;
+}
+.aboutHr{
+    border:none;
+    height: 0.7px;
+    background-color: black;
+    width: 70%;
+}
